@@ -19,12 +19,13 @@ int main(){
  int balance =2000;
 
   printf(" balance in account: Rs.%d\n", balance);
+  
+  withdraw( &balance , 1500);
+ printf(" balance after withdraw : Rs.%d\n", balance);
 
  deposit( &balance ,1000);
- printf(" balance after deposit : RS.%d", balance);
+ printf(" balance after deposit : RS.%d\n", balance);
  
-  withdraw( &balance , 1500);
- printf(" balance after withdraw : Rs.%d", balance);
 
  printf("Final amount : Rs.%d", balance);
 return 0;
